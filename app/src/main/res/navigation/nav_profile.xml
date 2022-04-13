@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_profile"
+    app:startDestination="@id/profileMenuFragment">
+
+    <fragment
+        android:id="@+id/profileAddFragment"
+        android:name="com.example.mobilki_2.Fragments.ProfileAddFragment"
+        android:label="fragment_profile_add"
+        tools:layout="@layout/fragment_profile_add" >
+        <action
+            android:id="@+id/action_profileAddFragment_to_profileMenuFragment"
+            app:destination="@id/profileMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileDeleteFragment"
+        android:name="com.example.mobilki_2.Fragments.ProfileDeleteFragment"
+        android:label="fragment_profile_delete"
+        tools:layout="@layout/fragment_profile_delete" >
+        <action
+            android:id="@+id/action_profileDeleteFragment_to_profileMenuFragment"
+            app:destination="@id/profileMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileEditFragment"
+        android:name="com.example.mobilki_2.Fragments.ProfileEditFragment"
+        android:label="fragment_profile_edit"
+        tools:layout="@layout/fragment_profile_edit" >
+        <action
+            android:id="@+id/action_profileEditFragment_to_profileMenuFragment"
+            app:destination="@id/profileMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileChangeFragment"
+        android:name="com.example.mobilki_2.Fragments.ProfileChangeFragment"
+        android:label="fragment_profile_change"
+        tools:layout="@layout/fragment_profile_change" >
+        <action
+            android:id="@+id/action_profileChangeFragment_to_profileMenuFragment"
+            app:destination="@id/profileMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileMenuFragment"
+        android:name="com.example.mobilki_2.Fragments.ProfileMenuFragment"
+        android:label="fragment_profile_menu"
+        tools:layout="@layout/fragment_profile_menu" >
+        <action
+            android:id="@+id/action_profileMenuFragment_to_profileAddFragment"
+            app:destination="@id/profileAddFragment" />
+        <action
+            android:id="@+id/action_profileMenuFragment_to_profileEditFragment"
+            app:destination="@id/profileEditFragment" />
+        <action
+            android:id="@+id/action_profileMenuFragment_to_profileDeleteFragment"
+            app:destination="@id/profileDeleteFragment" />
+        <action
+            android:id="@+id/action_profileMenuFragment_to_profileChangeFragment"
+            app:destination="@id/profileChangeFragment" />
+    </fragment>
+</navigation>

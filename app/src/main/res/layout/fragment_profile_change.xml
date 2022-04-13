@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.ProfileChangeFragment" >
+
+    <Button
+        android:id="@+id/btnChangeProfileChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Change"
+        app:layout_constraintStart_toStartOf="@+id/editTextProfileChange"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMessageChangeProfile" />
+
+    <Button
+        android:id="@+id/btnCancelProfileChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Cancel"
+        app:layout_constraintEnd_toEndOf="@+id/editTextProfileChange"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMessageChangeProfile" />
+
+    <EditText
+        android:id="@+id/editTextProfileChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Change profile"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewMessageChangeProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextProfileChange"
+        app:layout_constraintStart_toStartOf="@+id/editTextProfileChange"
+        app:layout_constraintTop_toBottomOf="@+id/editTextProfileChange" />
+</androidx.constraintlayout.widget.ConstraintLayout>
